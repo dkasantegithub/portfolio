@@ -74,6 +74,7 @@ export default function Navbar() {
             >Resume ↓</a>
           </nav>
 
+          
           {/* Hamburger — mobile only */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}

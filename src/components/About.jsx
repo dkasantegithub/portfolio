@@ -39,8 +39,16 @@ export default function About() {
             {/* Stats */}
             <div style={{ display: "flex", gap: "1rem", marginBottom: "3rem", flexWrap: "wrap" }}>
               {stats.map(stat => (
-                <div key={stat.label} style={{ padding: "1.25rem 1rem", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flex: "1", minWidth: "100px", textAlign: "center" }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "1.6rem", fontWeight: 800, color: "var(--accent)", marginBottom: "4px" }}>{stat.value}</p>
+                <div key={stat.label} style={{ 
+                  padding: "1.25rem 1rem", 
+                  border: "1px solid rgba(255,255,255,0.06)", 
+                  borderRadius: "10px", 
+                  background: "rgba(255,255,255,0.02)", 
+                  flex: "1 1 80px",
+                  minWidth: "80px",
+                  textAlign: "center" 
+                }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem, 4vw, 1.6rem)", fontWeight: 800, color: "var(--accent)", marginBottom: "4px" }}>{stat.value}</p>
                   <p style={{ fontSize: "0.75rem", color: "#475569", lineHeight: 1.4 }}>{stat.label}</p>
                 </div>
               ))}
