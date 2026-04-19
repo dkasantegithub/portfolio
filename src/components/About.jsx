@@ -48,7 +48,7 @@ export default function About() {
                   minWidth: "80px",
                   textAlign: "center" 
                 }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem, 4vw, 1.6rem)", fontWeight: 800, color: "var(--accent)", marginBottom: "4px" }}>{stat.value}</p>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(0.85rem, 3.5vw, 1.6rem)", fontWeight: 800, color: "var(--accent)", marginBottom: "4px" }}>{stat.value}</p>
                   <p style={{ fontSize: "0.75rem", color: "#475569", lineHeight: 1.4 }}>{stat.label}</p>
                 </div>
               ))}
